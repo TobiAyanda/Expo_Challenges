@@ -11,40 +11,21 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
+          source={require('@/assets/images/Me.jpeg')}
           style={styles.reactLogo}
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
+        <ThemedText type="title">Oluwatobiloba</ThemedText>
       </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({ ios: 'cmd + d', android: 'cmd + m' })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
+      <ThemedText style={styles.leader}> Scrum Leader</ThemedText>
+      <ThemedView style={styles.About}>Bio:</ThemedView>
+      <ThemedView style={styles.text}>I love spending my free time playing games on my laptop. I like to play a fast-paced
+            first-person shooter but I am not that good at it. Another type of game I like to play is strategy games. I
+            always have a great time playing games and improving my gaming skills. I love playing gaming but I also
+            enjoy playing soccer for fun. My chosen role for SCLA is Scrum Leader. I pick that because I like to lead people
+            get them back on track. My dream career would be becoming my own boss. I would like to start a conpany some day!
+
       </ThemedView>
     </ParallaxScrollView>
   );
@@ -60,11 +41,22 @@ const styles = StyleSheet.create({
     gap: 8,
     marginBottom: 8,
   },
+  
   reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+    borderRadius: 220,
+    maxWidth: 220,
+    height: 220,
   },
+  About: {
+    height: 120,
+    color: 'white',
+    fontSize: 25,
+  },
+  text: {
+    color: 'white',
+    fontSize: 20,
+  },
+
 });
+
+
